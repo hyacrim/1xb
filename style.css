@@ -1,0 +1,37 @@
+input[type="number"] {
+    width: 150px;
+    padding: 3px;
+    font-size: 14px;
+    margin: 10px;
+}
+
+.contien{
+    position: absolute;
+    background-image: url("IMG/love.webp");
+    text-align: center;
+    
+}
+
+.submit{
+    background-color: rgb(21, 201, 36);
+    color: rgb(255, 255, 255);
+    border: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: green;
+}
+
+.inpute{
+    width: 200px;
+			padding: 5px;
+			font-size: 16px;
+			margin: 10px;
+			border: 1px solid #ccc;
+			border-radius: 5px;
+			background-color: #f2f2f2;
+}
+

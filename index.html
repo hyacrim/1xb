@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="Fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>1xbet</title>
+</head>
+<body class="contien">
+   <div >
+    <table>
+        <tr>
+            <td style="text-align: right;"><strong>Cote: </strong> </td>
+            <td><input type="number" id="cote" class="inpute"></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><strong style="text-align: right;">montant de la première mise  :</strong> </td>
+            <td><input type="number" id="montant" class="inpute"></td>
+        </tr>
+        <tr>
+            <td style="text-align: right;"><strong>multiplede la mise:</strong> </td>
+            <td><input  type="number" id="multiple" class="inpute"></td>
+        </tr>
+    </table>
+     <br>
+    <br><div class="calcul">
+        <button onclick="calculer()" type="submit" class="submit" >Calcul</button>
+        <button onclick="reset()" type="reset" class="submit">Effacer</button>
+        <button onclick="resetall()" type="reset" class="submit">Effacer tout</button>
+    </div>
+      <table style="border-collapse: collapse; width: 100%;" >
+        <tr>
+            <td style="text-align: center;"><strong></strong></td>
+            <td style="text-align: center;"><strong>Montant</strong></td>
+            <td style="text-align: center;"><strong>Cote</strong></td>
+            <td style="text-align: center;"><strong>Gagner</strong></td>
+            <td style="text-align: center;"><strong>Somme Total</strong></td>
+            <td style="text-align: center;"><strong>Gain</strong></td>
+
+        </tr> <br>
+        <br><tr>
+            <td style="text-align: center;" >1 ==></td>
+            <td><input class="inpute" readonly class="inpute" readonly id="mon1" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga1" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s1" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g1" style="text-align: center;"></td>
+        </tr><br>
+        <br><tr>
+            <td style="text-align: center;" >2 ==></td>
+            <td><input class="inpute" readonly id="mon2" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co2" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga2" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s2" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g2" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >3 ==></td>
+            <td><input class="inpute" readonly id="mon3" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co3" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga3" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s3" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g3" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >4 ==></td>
+            <td><input class="inpute" readonly id="mon4" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co4" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga4" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s4" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g4" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >5 ==></td>
+            <td><input class="inpute" readonly id="mon5" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co5" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga5" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s5" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g5" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >6 ==></td>
+            <td><input class="inpute" readonly id="mon6" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co6" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga6" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s6" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g6" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >7 ==></td>
+            <td><input class="inpute" readonly id="mon7" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co7" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga7" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s7" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g7" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >8 ==></td>
+            <td><input class="inpute" readonly id="mon8" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co8" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga8" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s8" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g8" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >9 ==></td>
+            <td><input class="inpute" readonly id="mon9" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co9" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga9" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s9" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g9" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >10 ==></td>
+            <td><input class="inpute" readonly id="mon10" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co10" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga10" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s10" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g10" style="text-align: center;"></td>
+        </tr>
+        <tr>
+            <td style="text-align: center;" >11 ==></td>
+            <td><input class="inpute" readonly id="mon11" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="co11" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="ga11" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="s11" style="text-align: center;"></td>
+            <td><input class="inpute" readonly id="g11" style="text-align: center;"></td>
+        </tr>
+      </table>
+   </div>
+   <br>
+    <p>/////////////////////////////////////////////////////////////////////////////</p>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
